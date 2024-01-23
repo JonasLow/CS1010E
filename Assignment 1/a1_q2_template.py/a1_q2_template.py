@@ -4,7 +4,7 @@ def triangle(len1, len2, len3):
     elif (len1 == len2 == len3):
         return "Equilateral"
     elif ((len1 == len2 and len2 != len3) or (len1 != len2 and len2 == len3) or (len1 == len3 and len1 != len2)):
-        return "Isoceles"
+        return "Isosceles"
     else:
         return "Scalene"
     
