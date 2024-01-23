@@ -1,6 +1,6 @@
 from a1_q10_template import invert_number
 
-def reversed_number(low, high):
+def reversed_numbers(low, high):
     acceptable_numbers = []
     for i in range(low, high + 1):
         if i == invert_number(i):
@@ -8,4 +8,4 @@ def reversed_number(low, high):
     
     return(len(acceptable_numbers))
 
-print(reversed_number(151, 202))
+print(reversed_numbers(151, 202))
