@@ -1,7 +1,7 @@
 def find_winners(factor, must_have, n):
     winners = 0
     i = 1
-    while (factor * i) < n:
+    while (factor * i) < n+1:
         if contain_digit(factor * i, must_have):
             winners += 1
         i += 1
