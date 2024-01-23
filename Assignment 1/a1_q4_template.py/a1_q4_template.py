@@ -1,8 +1,6 @@
-import sys
-
 def is_sum_odd(n):
     if n < 0:
-        sys.exit("Please enter a non-negative integer next time!")
+        print("Please enter a non-negative integer next time!")
     else:
         sum = 0
         while n > 0:
