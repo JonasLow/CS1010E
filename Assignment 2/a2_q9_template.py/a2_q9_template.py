@@ -1,6 +1,4 @@
 def merge(tup1, tup2):
-    # tup1 and tup2 each contain distinct integers in ascending order
-    # integers in tup1 are different from those in tup2
     i1 = 0  
     i2 = 0  
     new_lst = []
