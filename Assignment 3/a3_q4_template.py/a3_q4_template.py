@@ -3,9 +3,6 @@ from random import *
 def is_7_solved(mat1):
     loopcounter = 0
     while loopcounter < 100000:
-        # check if the mat1 is a sort and solved matrix or not, you simply can subtract your input matrix from the sorted 7-puzzle:
-        # [ [1,2,3,4] , [5,6,7,0] ], if the result is an all-zero matrix (e.g., summation of all elements is 0), so this is a solved 7-puzzle return true
-        # otherwise, input matrix doesn’t show a sorted/solved 7-puzzle, so return false
         if (mat1 == [[1, 2, 3, 4], [5, 6, 7, 0]]):
             return True
         else:
