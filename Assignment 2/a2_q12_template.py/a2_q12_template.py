@@ -9,8 +9,12 @@ def count_substring(string):
         if (string[i] == 'A' and string[n] == 'X'):
             count += 1
             n += 1
+        elif string[i] != 'A':
+            i += 1
+            n = i + 1
         else:
             n += 1
+            
         if n == len(string) and i < (len(string) - 1):
             i += 1
             n = i + 1
