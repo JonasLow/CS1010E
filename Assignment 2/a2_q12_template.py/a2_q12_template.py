@@ -3,16 +3,20 @@
 
 def count_substring(string):
     i = 0
-    n = i
+    n = 1
     count = 0
-    while i < len(string):
+    while n < len(string):
         if (string[i] == 'A' and string[n] == 'X'):
             count += 1
             n += 1
-        elif (string[i] == 'A' and n < (len(string) - 1)):
-            n += 1
         else:
+            n += 1
+        if n == len(string) and i < (len(string) - 1):
             i += 1
-            n = i
-    
+            n = i + 1
     return count
+
+print(count_substring("AXAXAXAXAX"))
+print(count_substring("AAXOXXA"))
+print(count_substring("CAXAAYXZA"))
+print(count_substring("AAAAXXXX"))
