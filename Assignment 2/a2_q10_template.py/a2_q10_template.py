@@ -12,9 +12,18 @@ def resistors(seq, R):
         else:
             n = 0
             i += 1
+    return False
 
+def new_resistors(seq, R):
+    seen = set()
+    for i in seq:
+        j = R - i
+        if j in seen:
+            return True
+        seen.add(i)
     return False
 
 print(resistors((1, 3, 4), 4))
 print(resistors((1, 3, 5, 7), 5))
-        
+print(new_resistors((1, 3, 4), 4))
+print(new_resistors((1, 3, 5, 7), 5))
